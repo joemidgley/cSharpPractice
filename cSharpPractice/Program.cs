@@ -22,6 +22,7 @@ namespace cSharpPractice
             //TODO expression trees
             //TODO newer syntactic sugar
             //TODO maybe some design patterns?
+            //TODO begin invoke, end invoke? async stuff probably.
         }
 
     }            

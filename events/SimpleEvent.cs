@@ -4,7 +4,7 @@ using System.Text;
 
 namespace events
 {
-    class SimpleEventSamePubSub
+    class SimpleEvent
     {
         //events are most useful when pub and sub are NOT in the same class - thinking of unity for example.
         //publisher doesn't know about subscribers.
@@ -28,14 +28,6 @@ namespace events
                 //}
                 OnThingHappened?.Invoke(this, EventArgs.Empty);                
             }            
-
         }
-
-
-
-
-
-
-
     }
 }

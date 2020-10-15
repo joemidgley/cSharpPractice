@@ -7,14 +7,24 @@ namespace events
         static void Main(string[] args)
         {
             Console.WriteLine("In events project");
-            SimpleEventSamePubSub ps = new SimpleEventSamePubSub();
+
+            /*
+            SimpleEvent ps = new SimpleEvent();
             ps.OnThingHappened += Ps_OnThingHappened;//visual studio auto complete very helpful here.
             ps.runSimpleEvent();
+            */
 
-            //TODO events across different classes.
-            //TODO events with custom eventArgs
+            EventWithCustomArgs ewc = new EventWithCustomArgs();
+            ewc.OnThingHappened += Ewc_OnThingHappened;
+            ewc.runEventWithCustomArgs();
+
             //TODO events that are NOT of type eventHandler.
             //TODO read more on what's special about events as compared to delegates. 
+        }
+
+        private static void Ewc_OnThingHappened(object sender, EventArgWithInt e)
+        {
+            Console.WriteLine("the int arg was:" + e.ArgInt);
         }
 
         private static void Ps_OnThingHappened(object sender, EventArgs e)
@@ -26,7 +36,6 @@ namespace events
 
             Console.WriteLine("The thing happened!");
             Console.WriteLine("sender was:" + sender.ToString());
-
         }
     }
 }
