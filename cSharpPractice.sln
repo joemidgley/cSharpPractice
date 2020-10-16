@@ -5,7 +5,9 @@ VisualStudioVersion = 16.0.28729.10
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "cSharpPractice", "cSharpPractice\cSharpPractice.csproj", "{35B17CB8-64EA-468F-B6AC-FF548366DBC1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "events", "events\events.csproj", "{96E9A83A-3918-4086-B80D-C51A0E9E650D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "events", "events\events.csproj", "{96E9A83A-3918-4086-B80D-C51A0E9E650D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "delegates", "delegates\delegates.csproj", "{DB8008ED-0224-4B0B-BC48-B3508501846A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{96E9A83A-3918-4086-B80D-C51A0E9E650D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{96E9A83A-3918-4086-B80D-C51A0E9E650D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{96E9A83A-3918-4086-B80D-C51A0E9E650D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB8008ED-0224-4B0B-BC48-B3508501846A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB8008ED-0224-4B0B-BC48-B3508501846A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB8008ED-0224-4B0B-BC48-B3508501846A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB8008ED-0224-4B0B-BC48-B3508501846A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
